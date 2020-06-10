@@ -25,6 +25,7 @@ inline double uni_sample() {
 }
 
 // sample from Mult(p)
+// mtfelix: 标准方法，可以参考: https://en.wikipedia.org/wiki/Multinomial_distribution#Sampling_from_a_multinomial_distribution
 inline int mult_sample(vector<double> p) {
 	int K = p.size();
 	for (int i = 1; i < K; i++)
